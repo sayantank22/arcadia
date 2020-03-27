@@ -125,7 +125,10 @@ class Navbar extends Component {
                     ? 'current-menu-item'
                     : ''
                 }>
-                <a href={`/${this.state.slugs[3]}`}>{this.state.titles[3]}</a>
+                <a
+                  href={`https://arcadia-demo.netlify.com/${this.state.slugs[3]}`}>
+                  {this.state.titles[3]}
+                </a>
               </li>
               <li
                 id='news-room'
@@ -134,7 +137,9 @@ class Navbar extends Component {
                     ? 'current-menu-item'
                     : ''
                 }>
-                <a activeClassName={'active'} href={`/${this.state.slugs[4]}`}>
+                <a
+                  activeClassName={'active'}
+                  href={`https://arcadia-demo.netlify.com/${this.state.slugs[4]}`}>
                   {this.state.titles[4]}
                 </a>
               </li>
