@@ -29,7 +29,7 @@ class Contact extends Component {
   }
   componentDidMount() {
     axios
-      .get('http://arcadiabsi.wpengine.com/wp-json/wp/v2/pages/61', cors())
+      .get('https://arcadiabsi.wpengine.com/wp-json/wp/v2/pages/61', cors())
       .then(res => {
         this.setState({
           content: res.data.content.rendered
@@ -39,7 +39,7 @@ class Contact extends Component {
         console.log(err);
       });
     axios
-      .get('http://arcadiabsi.wpengine.com/wp-json/acf/v3/pages/61', cors())
+      .get('https://arcadiabsi.wpengine.com/wp-json/acf/v3/pages/61', cors())
       .then(res => {
         this.setState({
           pl_heading: res.data.pl_heading,
@@ -50,7 +50,7 @@ class Contact extends Component {
         console.log(err);
       });
     axios
-      .get('http://arcadiabsi.wpengine.com/wp-json/wp/v2/media/91', cors())
+      .get('https://arcadiabsi.wpengine.com/wp-json/wp/v2/media/91', cors())
       .then(res => {
         this.setState({
           source_url: res.data.source_url
@@ -62,7 +62,7 @@ class Contact extends Component {
 
     axios
       .get(
-        'http://arcadiabsi.wpengine.com/wp-json/acf/v3/options/options',
+        'https://arcadiabsi.wpengine.com/wp-json/acf/v3/options/options',
         cors()
       )
       .then(res => {

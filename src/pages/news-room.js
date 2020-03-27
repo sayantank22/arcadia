@@ -34,7 +34,7 @@ class NewsRoom extends Component {
     // });
 
     axios
-      .get('http://arcadiabsi.wpengine.com/wp-json/wp/v2/posts', cors())
+      .get('https://arcadiabsi.wpengine.com/wp-json/wp/v2/posts', cors())
       .then(res => {
         return res.data.map((post, index) => {
           return this.setState({

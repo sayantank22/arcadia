@@ -5,8 +5,6 @@ import '../css/slick.css';
 import axios from 'axios';
 import cors from 'cors';
 import $ from 'jquery';
-import styled from 'styled-components';
-import Radium from 'radium';
 import { withRouter } from 'react-router-dom';
 
 class Navbar extends Component {
@@ -42,7 +40,7 @@ class Navbar extends Component {
 
     axios
       .get(
-        'http://arcadiabsi.wpengine.com/wp-json/menus/v1/menus/primary-menu',
+        'https://arcadiabsi.wpengine.com/wp-json/menus/v1/menus/primary-menu',
         cors()
       )
       .then(res => {
@@ -60,7 +58,7 @@ class Navbar extends Component {
 
     axios
       .get(
-        'http://arcadiabsi.wpengine.com/wp-json/acf/v3/options/options',
+        'https://arcadiabsi.wpengine.com/wp-json/acf/v3/options/options',
         cors()
       )
       .then(res => {

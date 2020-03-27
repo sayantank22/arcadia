@@ -18,7 +18,7 @@ class Footer extends Component {
   componentDidMount() {
     axios
       .get(
-        'http://arcadiabsi.wpengine.com/wp-json/menus/v1/menus/primary-menu',
+        'https://arcadiabsi.wpengine.com/wp-json/menus/v1/menus/primary-menu',
         cors()
       )
       .then(res => {

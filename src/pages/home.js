@@ -30,7 +30,7 @@ class home extends Component {
   }
   componentDidMount() {
     axios
-      .get('http://arcadiabsi.wpengine.com/wp-json/wp/v2/pages/11/', cors())
+      .get('https://arcadiabsi.wpengine.com/wp-json/wp/v2/pages/11/', cors())
       .then(res =>
         this.setState({
           banner: res.data.acf.hp_banner,
@@ -46,7 +46,7 @@ class home extends Component {
 
     axios
       .get(
-        'http://arcadiabsi.wpengine.com/wp-json/wp/v2/posts/59?_embed',
+        'https://arcadiabsi.wpengine.com/wp-json/wp/v2/posts/59?_embed',
         cors()
       )
       .then(res => {

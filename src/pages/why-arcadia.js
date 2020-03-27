@@ -46,7 +46,7 @@ class WhyArcadia extends Component {
   }
   componentDidMount() {
     axios
-      .get('http://arcadiabsi.wpengine.com/wp-json/acf/v3/pages/62/', cors())
+      .get('https://arcadiabsi.wpengine.com/wp-json/acf/v3/pages/62/', cors())
       .then(res => {
         this.setState({
           pl_heading: res.data.acf.pl_heading,
